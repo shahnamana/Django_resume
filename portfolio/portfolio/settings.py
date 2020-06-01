@@ -25,7 +25,7 @@ SECRET_KEY = 'ndamoet044+x&&w-r22p#tc194+#t2ykjjoi5$fvg9yom7vct8'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['djangoresumenamanshah.herokuapp.com']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -38,7 +38,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'core',
-    'contact_form'
 ]
 
 MIDDLEWARE = [
@@ -75,7 +74,21 @@ WSGI_APPLICATION = 'portfolio.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
+#
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql_psycopg2',
+#         'NAME': 'd9fp4u93l490r0',
+#         'HOST': 'ec2-52-202-22-140.compute-1.amazonaws.com',
+#         'USER': 'jmshvodexlfoip',
+#         'PASSWORD':'0203866fbd73cae30e68d044db8346cc099101fb99a56e6299df5b2a5b41c1de',
+#         'PORT': '5432',
+#
+#     }
+# }
 
+#original databases
+#
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -123,7 +136,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR,'static')
+    os.path.join((BASE_DIR),'static')
 ]
 
 MEDIA_URL = '/media/'
@@ -131,5 +144,5 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 
 
-
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+# 
+# STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
