@@ -16,6 +16,7 @@ class HouseTemplateView(TemplateView):
         context['services'] = Service.objects.all()
         context['works'] = RecentWork.objects.all()
         context['certificate'] = Certificate.objects.all()
+        context['clients'] = Client.objects.all()
         return context
 
 #

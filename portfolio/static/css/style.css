@@ -40,7 +40,9 @@ a,
 a:focus,
 a:active,
 a:link,
-img {
+
+
+ {
     outline: none;
 }
 
@@ -112,7 +114,7 @@ h6 {
 }
 
 .section-padding {
-    padding: 90px 0;
+    padding: 20px;
 }
 
 .bg-overlay {
@@ -367,7 +369,7 @@ h6 {
 .nam{
     vertical-align: center;
     overflow-wrap: break-word;!important;
-    padding: 100px;!important;
+    padding: 20px;!important;
 }
 
 /*.contactrow{*/
@@ -478,7 +480,8 @@ h6 {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(102, 218, 255, 0.7);
+    /* background: rgba(102, 218, 255, 0.7); */
+    background: #ff0000;
     color: #fff;
     opacity: 0;
     -webkit-transition: .7s;
@@ -515,7 +518,7 @@ h6 {
 
 .gallery-text {
     opacity: 0;
-    color: #fff;
+    color: #000000;
     position: absolute;
     top: 50%;
     left: 50%;
